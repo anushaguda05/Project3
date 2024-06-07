@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Matching Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Job Matching Portal</h1>
+    </header>
+    <main>
+        <section class="add-job">
+            <h2>Add New Job</h2>
+            <form id="jobForm">
+                <label for="title">Job Title:</label>
+                <input type="text" id="title" required>
+                
+                <label for="company">Company:</label>
+                <input type="text" id="company" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+                
+                <button type="submit">Add Job</button>
+            </form>
+        </section>
+        <section class="search-job">
+            <h2>Search Jobs</h2>
+            <input type="text" id="searchInput" placeholder="Search for jobs...">
+        </section>
+        <section class="job-list">
+            <h2>Job Listings</h2>
+            <ul id="jobList"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
